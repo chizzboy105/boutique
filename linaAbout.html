@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>
+            About
+    </title>
+
+    <style>
+
+        body {
+            background-image: url(treed.jpg);
+            margin: 0px 5px 0px 5px;
+            background-size: cover;
+            border-bottom: 0px solid yellow;
+        }
+
+        h1 {
+            text-align: center;
+            color: aqua;
+            padding: 2px;
+            margin: 0px 5px 0px 5px;
+            font: 600;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 60px;
+        }
+
+        h2 {
+            color: red;
+            padding: 0px;
+            margin: auto;
+            font: 600;
+            font-family: Algerian;
+            font-size: 30px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .fa {
+            padding: 0px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: #2980B9;
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .button:hover {
+            background-color: #3e8e41
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        p {
+            margin: auto;
+            padding: unset;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p style="color:darkslategrey" align="center">
+        Powered by Chizzy PicK n Choose
+    </p>
+    <hr />
+    <hr />
+
+    <h1 style="color:black" align="center" color="white">
+
+        ABOUT & CONTACT
+    </h1>
+
+    <hr />
+    <hr />
+    <br />
+
+    <center>
+        <div class="dropdown" align="left">
+            <button onclick="myFunction()" class="dropbtn"> Menu </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="Boutique.html">Home</a>
+            </div>
+        </div>
+
+        <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <br />
+
+        <br />
+
+    </center>
+
+    <center>
+
+        <h3 style="color:purple"> How we operate : <br /> </h3>
+
+        <h3 style="color:white"> 1.Product #ID <br /> 2.Product Name <br /> 3.Product Category <br /> 4. Number of Pieces Ordering    <br />  </h3>
+        <hr />
+        <p style="color: chartreuse">Eg : 7 , Nikey Air-Force ,Foot-Wear , 2pairs ,Size : 6  </p>
+        <br />
+        Or
+        <br />
+        <br />
+        <p style="color: white">Eg : 7 , Nikey Air-Force ,Foot-Wear , 2 , 6  </p>
+        <hr />
+        <h5 style="color:red">
+            To order contact us via any of our means of contact provided on this page <br /> Or App Us  <a href="https://wa.me/264812530545" target="_blank" style="display: table; font-family: sans-serif; text-decoration: none; margin: 1em auto; color: #fff; font-size: 0.9em; padding: 1em 2em 1em 3.5em; border-radius: 2em; font-weight: bold; background: #25d366 url('https://tochat.be/click-to-chat-directory/css/whatsapp.svg') no-repeat 1.5em center; background-size: 1.6em;">Order Via WhatsApp</a>
+        </h5>
+
+    </center>
+
+    <center>
+        <br />
+        <div style="color:black">
+
+            <h2> Products Stats : </h2>
+            <br />
+            <br />
+            <table border="2" width="50%" bgcolor="transparent">
+                <tr>
+                    <th>#Id :</th>
+                    <th>Name :</th>
+                    <th>Category :</th>
+                    <th> Units Available  :</th>
+                    <th> Sizes Available </th>
+
+                </tr>
+
+
+                <tr>
+                    <th>1</th>
+                    <th>PANTS</th>
+                    <th>Clothes</th>
+                    <th>60</th>
+
+
+                </tr>
+
+                <tr>
+                    <th>2</th>
+                    <th>TRACK-SUITS </th>
+                    <th>Clothes</th>
+                    <th>50</th>
+
+                </tr>
+
+                <tr>
+                    <th>3</th>
+                    <th>HAIR</th>
+                    <th>Accessories</th>
+                    <th>20</th>
+
+                </tr>
+
+                <tr>
+                    <th>4</th>
+                    <th> PERFUMES </th>
+                    <th>Cosmetics</th>
+                    <th>75</th>
+
+                </tr>
+
+                <tr>
+                    <th>5</th>
+                    <th>ACCESSORIES</th>
+                    <th>Accessories</th>
+                    <th>80</th>
+
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <th> SHOES </th>
+                    <th>Foot-Wear</th>
+                    <th>50</th>
+                    <th>3-10 </th>
+                </tr>
+            </table>
+
+        </div>
+
+
+    </center>
+
+
+    <br />
+    <br />
+
+    <h1 style="color:darkorange"><b><i>Our Social Media Platforms..</i></b></h1>
+
+    <table border="0" width="100%" bgcolor="blue">
+        <tr>
+            <td align="center">
+                <a href="https://wa.me/264812530545" target="_blank ">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.facebook.com/brojansen" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.instagram.com/exclusive_nail_palace/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://youtu.be/R7h69W3zw74" target="_blank">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="mailto:linaboutique332.com" target="_blank">
+                    <i class="fa fa-google"></i>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+
+    <div align="center" class="container">
+
+        <div class="w3-card-4" style="width:50%">
+            <header class="w3-container w3-light-grey">
+                <h2 style="color:yellow" align="center">Lina's Boutique  </h2>
+            </header>
+            <div class="w3-container">
+
+                <hr />
+                <h3 style="color:white" font-family="algerian" align="center">
+                    IS a intergrated website to facilitate online services in one go.
+                    What you can expect : a wide range of product & services.
+                    Please do leave  comment to help us make it easy for us to improve our
+                    services ,we highly appreciate your input.
+                </h3>
+                <br />
+
+            </div>
+            <a href="https://www.linkedin.com/in/williamhgates/" target="_blank">
+                <i class="fa-fa-linkedin-in" style="color:aqua">
+                    <img src="linkedin-49-226551.jpg" alt="Linked-In.jpg" />
+                </i>
+            </a>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <table border="0" width="100%" bgcolor="#ffd699">
+        <tr>
+            <th><h2>Contact US </h2></th>
+        </tr>
+    </table>
+
+    <table border="0" width="100%" bgcolor="white">
+        <tr>
+            <th>
+                Company :
+                <p>
+                    Lina's Boutique
+                </p>
+            </th>
+            <th>
+                About Us
+                <p>Our Misssion : I Can You Can We can Do It</p>
+            </th>
+            <th>
+                Contact Us
+                <p> <a href="tel:+264-812-530-545">+264 812 530 545</a></p>
+                <a href="mailto:linaboutique332.com" target="_blank">Info @linaboutique332@gmail.com</a>
+            </th>
+
+        </tr>
+    </table>
+
+
+    <table border="0" width="100%">
+        <tr>
+            <td style="color:white" align="center"><a href="">T&C's</a></td>
+            <td style="color:white" align="center"><a href="">Disclaimer</a></td>
+            <td style="color:white" align="center"><a href="">Privacy</a></td>
+            <td style="color:white" align="center"><a href="">Policy</a></td>
+        </tr>
+    </table>
+
+
+    <table border="0" width="100%" bgcolor="grey">
+        <tr>
+            <td align="center"><p>@ &nbsp;2021 Official Chizzboy </p></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
