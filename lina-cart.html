@@ -130,21 +130,21 @@
             const $total = document.querySelector(".total")
 
             $cart.innerHTML = items.map((item) => `
-                                                                <tr>
-                                                                    <td>#${item.id}</td>
-                                                                    <td>${item.name}</td>
-                                                                    <td>${item.quantity}</td>
-                                                                    <td style="width: 60px;">
-                                                                        <button type="button" class="btn btn-block btn-sm btn-outline-primary"
-                                                                            onClick="cartLS.quantity(${item.id},1)">+</button>
-                                                                    </td>
-                                                                    <td style="width: 60px;">
-                                                                        <button type="button" class="btn btn-block btn-sm btn-outline-primary"
-                                                                            onClick="cartLS.quantity(${item.id},-1)">-</button>
-                                                                    </td>
-                                                                    <td class="text-right">$${item.price}</td>
-                                                                    <td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">Delete</Button></td>
-                                                                </tr>`).join("")
+                                                                    <tr>
+                                                                        <td>#${item.id}</td>
+                                                                        <td>${item.name}</td>
+                                                                        <td>${item.quantity}</td>
+                                                                        <td style="width: 60px;">
+                                                                            <button type="button" class="btn btn-block btn-sm btn-outline-primary"
+                                                                                onClick="cartLS.quantity(${item.id},1)">+</button>
+                                                                        </td>
+                                                                        <td style="width: 60px;">
+                                                                            <button type="button" class="btn btn-block btn-sm btn-outline-primary"
+                                                                                onClick="cartLS.quantity(${item.id},-1)">-</button>
+                                                                        </td>
+                                                                        <td class="text-right">$${item.price}</td>
+                                                                        <td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">Delete</Button></td>
+                                                                    </tr>`).join("")
 
             $total.innerHTML = "$" + cartLS.total()
         }
@@ -313,12 +313,13 @@
         </tr>
     </table>
 
+
     <table border="0" width="100%">
         <tr>
-            <td align="center"><a href="">T&C's</a></td>
-            <td align="center"><a href="">Disclaimer</a></td>
-            <td align="center"><a href="">Privacy</a></td>
-            <td align="center"><a href="">Policy</a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank">T&C's</a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank">Disclaimer</a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank">Privacy</a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank">Policy</a></td>
         </tr>
     </table>
 
