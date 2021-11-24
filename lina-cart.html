@@ -130,21 +130,21 @@
             const $total = document.querySelector(".total")
 
             $cart.innerHTML = items.map((item) => `
-                                                                    <tr>
-                                                                        <td>#${item.id}</td>
-                                                                        <td>${item.name}</td>
-                                                                        <td>${item.quantity}</td>
-                                                                        <td style="width: 60px;">
-                                                                            <button type="button" class="btn btn-block btn-sm btn-outline-primary"
-                                                                                onClick="cartLS.quantity(${item.id},1)">+</button>
-                                                                        </td>
-                                                                        <td style="width: 60px;">
-                                                                            <button type="button" class="btn btn-block btn-sm btn-outline-primary"
-                                                                                onClick="cartLS.quantity(${item.id},-1)">-</button>
-                                                                        </td>
-                                                                        <td class="text-right">$${item.price}</td>
-                                                                        <td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">Delete</Button></td>
-                                                                    </tr>`).join("")
+                                                                        <tr>
+                                                                            <td>#${item.id}</td>
+                                                                            <td>${item.name}</td>
+                                                                            <td>${item.quantity}</td>
+                                                                            <td style="width: 60px;">
+                                                                                <button type="button" class="btn btn-block btn-sm btn-outline-primary"
+                                                                                    onClick="cartLS.quantity(${item.id},1)">+</button>
+                                                                            </td>
+                                                                            <td style="width: 60px;">
+                                                                                <button type="button" class="btn btn-block btn-sm btn-outline-primary"
+                                                                                    onClick="cartLS.quantity(${item.id},-1)">-</button>
+                                                                            </td>
+                                                                            <td class="text-right">$${item.price}</td>
+                                                                            <td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">Delete</Button></td>
+                                                                        </tr>`).join("")
 
             $total.innerHTML = "$" + cartLS.total()
         }
@@ -297,18 +297,20 @@
         <tr>
             <th>
                 Company :
-                <p>
+                <p style="color:red">
                     Lina's Boutique
                 </p>
             </th>
             <th>
                 About Us
-                <p>Our Misssion : I Can You Can We can Do It</p>
+                <p style="color:red">
+                    Our Misssion : I Can You Can We can Do It
+                </p>
             </th>
             <th>
                 Contact Us
-                <p> <a href="tel:+264-812-530-545">+264 812 530 545</a></p>
-                <a href="mailto:linaboutique332.com" target="_blank">Info @linaboutique332@gmail.com</a>
+                <pstyle ="color:red"> <a href="tel:+264-812-530-545">+264 812 530 545</a></pstyle>
+                <a href="mailto:linaboutique332@gmail.com" target="_blank">Info @linaboutique332@gmail.com</a>
             </th>
         </tr>
     </table>
