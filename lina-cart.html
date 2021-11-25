@@ -107,6 +107,8 @@
         <div class="card-header">
             <h2 id="payout">Cart</h2>
         </div>
+        <br />
+        <br />
         <div class="card-body">
             <table class="table">
                 <tbody class="cart">
@@ -118,6 +120,9 @@
                 <td></td>
                 <td></td>
                 <td class="text-right">Total: <strong class="total"></strong></td>
+                <td>
+                    <button class="btn btn-primary">Clear all</button>
+                </td>
                 <td></td>
                 </tfoot>
             </table>
@@ -128,29 +133,42 @@
         function renderCart(items) {
             const $cart = document.querySelector(".cart")
             const $total = document.querySelector(".total")
-
+           
             $cart.innerHTML = items.map((item) => `
-                                                                            <tr>
-                                                                                <td>#${item.id}</td>
-                                                                                <td>${item.name}</td>
-                                                                                <td>${item.quantity}</td>
-                                                                                <td style="width: 60px;">
-                                                                                    <button type="button" class="btn btn-block btn-sm btn-outline-primary"
-                                                                                        onClick="cartLS.quantity(${item.id},1)">+</button>
-                                                                                </td>
-                                                                                <td style="width: 60px;">
-                                                                                    <button type="button" class="btn btn-block btn-sm btn-outline-primary"
-                                                                                        onClick="cartLS.quantity(${item.id},-1)">-</button>
-                                                                                </td>
-                                                                                <td class="text-right">N$${item.price}</td>
-                                                                                <td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">Delete</Button></td>
-                                                                            </tr>`).join("")
+                        <tr>
+                             <td>#${item.id}</td>
+                             <td>${item.name}</td>
+                             <td>${item.quantity}</td>
 
+                             <td style="width: 60px;">
+  <button type="button" class="btn btn-block btn-sm btn-outline-primary" onClick="cartLS.quantity(${item.id},1)">+</button>
+                             </td>
+                             <td style="width: 60px;">
+  <button type="button" class="btn btn-block btn-sm btn-outline-primary" onClick="cartLS.quantity(${item.id},-1)">-</button>
+                             </td>
+                             <td class="text-right">N$${item.price}</td>
+                             <td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">Delete</Button>
+                             </td>
+                              
+                             </tr>`).join("")
+
+               
             $total.innerHTML = "N$" + cartLS.total()
         }
         renderCart(cartLS.list())
         cartLS.onChange(renderCart)
     </script>
+    <br />
+    <center>
+        <button onclick="myFunction()" class="button">Submit Cart </button>
+
+        <script>
+            function myFunction() {
+                alert("Currently in Beta Mode ");
+            }
+        </script>
+    </center>
+
     <br />
     <center>
         <a href="https://wa.me/264812530545" target="_blank ">
@@ -257,34 +275,6 @@
     </table>
 
     <br />
-    <br />
-
-    <div align="center" class="container">
-
-        <div class="w3-card-4" style="width:50%">
-            <header class="w3-container w3-light-grey">
-                <h2 style="color:yellow" align="center">Lina's Boutique  </h2>
-            </header>
-            <div class="w3-container">
-
-                <hr />
-                <h3 style="color:white" font-family="algerian" align="center">
-                    IS a intergrated website to facilitate online services in one go.
-                    What you can expect : a wide range of product & services.
-                    Please do leave  comment to help us make it easy for us to improve our
-                    services ,we highly appreciate your input.
-                </h3>
-                <br />
-
-            </div>
-            <a href="https://www.linkedin.com/in//" target="_blank">
-                <i class="fa-fa-linkedin-in" style="color:aqua">
-                    <img src="linkedin-49-226551.jpg" alt="Linked-In.jpg" />
-                </i>
-            </a>
-        </div>
-    </div>
-
     <br />
 
     <a href="lina-Hub.html" target="_blank">
