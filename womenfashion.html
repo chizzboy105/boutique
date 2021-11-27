@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=yes" />
     <meta name="description" content="online shopping" />
     <meta name="keywords" content="html,css,javascricpt" />
     <meta name="author" content="ChizzBoy" />
@@ -77,58 +77,39 @@
             }
 
     </style>
-
 </head>
 <body>
-
-    <div class="header" style="background-color:black; color:white">
-        <br /><a href="lina-Hub.html">
-                  <h1 align="center" style="color:gold; font-family:Algerian; font-size:50px">Women's Fashion   </h1>
-        </a>
+    <div class="header" style="background-color:white; color:white">
+        <br />
+        <h1 align="center" style="color:rgb(61 245 17 / 0.80); font-family:Algerian; font-size:50px">Women's Fashion   </h1>
         <br />
     </div>
 
     <ul class="category" style="background-color:aquamarine">
 
         <a href="#womensclothes">
-        <li> Women's  Clothes     </li> </a>
+        <li>  Clothes     </li> </a>
 
         <a href="#womensfootwear">
-        <li> Women's' Foot-Wear    </li> </a>
-
+        <li>  Foot-Wear    </li> </a>
+        <!--
         <a href="#headwear">
         <li align="center"> Head-Wear    </li> </a>
-
+        -->
         <a href="#womensaccessories">
         <li>  Accessories    </li> </a>
 
     </ul>
     <br />
     <br />
-    <br />
-    <hr />
-    <br />
-    <div align="center" class="search-btn">
-        <h2 style="color:red" align="center"> <b> SEARCH HERE  </b></h2>
-
-        <input type="text" id="myinput" onkeyup="searchbutton()" placeholder="Search Here ..." />
-    </div>
-    <br />
     <a href="lina-cart.html" target="_blank">
         <li> CART >></li>
     </a>
-    <br />
-    <br />
-    <a href="mainpage.html">
-        <li> <<</li>
-    </a>
-    <br />
     <br />
 
     <center>
         <br />
         <h2 id="mensclothes">Womens Clothes </h2>
-        <hr />
         <br />
         <div class="card-deck mt-4 mb-4 text-center">
 
@@ -136,26 +117,7 @@
 
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal">
-                        Dresses 
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="dress1.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$100</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 1, name: ' Dresses', price: 100})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                         Skirts
+                        Dresses
                         <span>
                             <br />
                             <img width="40%" height="200px" src="dress2.jpg" />
@@ -163,312 +125,911 @@
                     </h4>
                 </div>
                 <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$120</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 2, name: ' Skirts', price: 120})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
-
-        </div>
-
-        <br />
-        <h2 id="womensclothes">Womens Head-Wear </h2>
-        <hr />
-        <br />
-        <div class="card-deck mt-4 mb-4 text-center">
-
-            <div class="card mb-4 shadow-sm">
-
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                       Bundled Hair
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="IMG-20211111-WA0066.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
                     <h1 class="card-title pricing-card-title">N$100</h1>
                     <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 3, name: ' Bundled Hair', price: 100})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        Butterfly Locs Hair
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="IMG-20211111-WA0067.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$120</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 4, name: 'Butterfly Locs Hair ', price: 120})">
+                            onClick="cartLS.add({id: 1, name: ' dress2', price: 100})">
                         Add to
                         Cart
                     </button>
                 </div>
             </div>
 
-        </div>
+            <div class="card-deck mt-4 mb-4 text-center">
 
-        <br />
-        <h2 id="mensfootwear"> Under-Garments </h2>
-        <hr />
-        <br />
-        <div class="card-deck mt-4 mb-4 text-center">
+                <div class="card mb-4 shadow-sm">
 
-            <div class="card mb-4 shadow-sm">
-
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        leggings 
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="dress3.jpg" />
-                        </span>
-                    </h4>
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">
+                            2 Piece
+                            <span>
+                                <br />
+                                <img width="40%" height="200px" src="2piececrochet.jpg" />
+                            </span>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">N$ 250.00</h1>
+                        <button type="button" class="btn btn-block btn-outline-primary"
+                                onClick="cartLS.add({id: 2, name: ' 2 Piece', price: 250})">
+                            Add to
+                            Cart
+                        </button>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$100</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 5, name: ' leggings', price: 100})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        Underwear 
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="dress3.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$120</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 6, name: ' Underwear', price: 120})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
 
-        </div>
+                <div class="card-deck mt-4 mb-4 text-center">
 
-        <br />
-        <h2 id="mensfootwear"> Foot-Wear </h2>
-        <hr />
-        <br />
-        <div class="card-deck mt-4 mb-4 text-center">
+                    <div class="card mb-4 shadow-sm">
 
-            <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">
+                                2 Piece
+                                <span>
+                                    <br />
+                                    <img width="40%" height="200px" src="2piece1.jpg" />
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">N$ 280.00</h1>
+                            <button type="button" class="btn btn-block btn-outline-primary"
+                                    onClick="cartLS.add({id: 3, name: ' 2 Piece', price: 280})">
+                                Add to
+                                Cart
+                            </button>
+                        </div>
+                    </div>
 
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        Sundals
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="IMG-20211108-WA0006.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$100</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 7, name: ' Sundals', price: 100})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        Heels 
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="IMG-20211108-WA0056.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$120</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 8, name: 'Heels ', price: 120})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
+                    <div class="card-deck mt-4 mb-4 text-center">
 
-        </div>
+                        <div class="card mb-4 shadow-sm">
+
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">
+                                    2 piece
+                                    <span>
+                                        <br />
+                                        <img width="40%" height="200px" src="2piece2.jpg" />
+                                    </span>
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                <button type="button" class="btn btn-block btn-outline-primary"
+                                        onClick="cartLS.add({id: 4, name: ' 2 Piece', price: 300})">
+                                    Add to
+                                    Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card-deck mt-4 mb-4 text-center">
+
+                            <div class="card mb-4 shadow-sm">
+
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">
+                                        2 piece
+                                        <span>
+                                            <br />
+                                            <img width="40%" height="200px" src="2piece3.jpg" />
+                                        </span>
+                                    </h4>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                    <button type="button" class="btn btn-block btn-outline-primary"
+                                            onClick="cartLS.add({id: 5, name: ' 2 Piece', price: 300})">
+                                        Add to
+                                        Cart
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card-deck mt-4 mb-4 text-center">
+
+                                <div class="card mb-4 shadow-sm">
+
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal">
+                                            2 piece
+                                            <span>
+                                                <br />
+                                                <img width="40%" height="200px" src="2piece5.jpg" />
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                        <button type="button" class="btn btn-block btn-outline-primary"
+                                                onClick="cartLS.add({id: 6, name: ' 2 Piece', price: 300})">
+                                            Add to
+                                            Cart
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card-deck mt-4 mb-4 text-center">
+
+                                    <div class="card mb-4 shadow-sm">
+
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-normal">
+                                                Dresses
+                                                <span>
+                                                    <br />
+                                                    <img width="40%" height="200px" src="blackdress1.jpg" />
+                                                </span>
+                                            </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <h1 class="card-title pricing-card-title">N$ 250.00</h1>
+                                            <button type="button" class="btn btn-block btn-outline-primary"
+                                                    onClick="cartLS.add({id: 7, name: ' Dresses', price: 250})">
+                                                Add to
+                                                Cart
+                                            </button>
+                                        </div>
+                                    </div>
 
 
-        <br />
-        <h2 id="womensfootwear">Accessories </h2>
-        <hr />
-        <br />
-        <div class="card-deck mt-4 mb-4 text-center">
+                                    <div class="card-deck mt-4 mb-4 text-center">
 
-            <div class="card mb-4 shadow-sm">
+                                        <div class="card mb-4 shadow-sm">
 
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        Assorted Perfumes 
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="IMG-20211111-WA0052.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$100</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 9, name: ' AAssorted Perfumes', price: 100})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        Exclusive Perfumes
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="IMG-20211111-WA0053.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$120</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 10, name: ' Exclusive Perfumes', price: 120})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
+                                            <div class="card-header">
+                                                <h4 class="my-0 font-weight-normal">
+                                                    Dresses
+                                                    <span>
+                                                        <br />
+                                                        <img width="40%" height="200px" src="blackdress2.jpg" />
+                                                    </span>
+                                                </h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <h1 class="card-title pricing-card-title">N$ 250.00</h1>
+                                                <button type="button" class="btn btn-block btn-outline-primary"
+                                                        onClick="cartLS.add({id: 8, name: ' Dresses', price: 250})">
+                                                    Add to
+                                                    Cart
+                                                </button>
+                                            </div>
+                                        </div>
 
-        </div>
+                                        <div class="card-deck mt-4 mb-4 text-center">
 
-        <br />
-        <h2 id="womensaccessories">Hair </h2>
-        <hr />
-        <br />
-        <div class="card-deck mt-4 mb-4 text-center">
+                                            <div class="card mb-4 shadow-sm">
 
-            <div class="card mb-4 shadow-sm">
+                                                <div class="card-header">
+                                                    <h4 class="my-0 font-weight-normal">
+                                                        Dresses
+                                                        <span>
+                                                            <br />
+                                                            <img width="40%" height="200px" src="blackdress3.jpg" />
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                    <button type="button" class="btn btn-block btn-outline-primary"
+                                                            onClick="cartLS.add({id: 9, name: ' Dresses', price: 300})">
+                                                        Add to
+                                                        Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-4 shadow-sm">
+                                                <div class="card-header">
+                                                    <h4 class="my-0 font-weight-normal">
+                                                        Dresses
+                                                        <span>
+                                                            <br />
+                                                            <img width="40%" height="200px" src="pinknblackdress1.jpg" />
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h1 class="card-title pricing-card-title">N$ 250.00</h1>
+                                                    <button type="button" class="btn btn-block btn-outline-primary"
+                                                            onClick="cartLS.add({id: 10, name: ' Dresses', price: 250})">
+                                                        Add to
+                                                        Cart
+                                                    </button>
+                                                </div>
+                                            </div>
 
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        Assorted HAir
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="IMG-20211111-WA0067.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$100</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 11, name: ' Assorted HAir', price: 100})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        Bundelled Hair
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="IMG-20211111-WA0067.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$120</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 12, name: ' Bundelled Hair', price: 120})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
+                                        </div>
 
-        </div>
+                                        <div class="card-deck mt-4 mb-4 text-center">
 
-        <br />
-        <h2 id="headwear"> Cosmetics </h2>
-        <hr />
-        <br />
-        <div class="card-deck mt-4 mb-4 text-center">
+                                            <div class="card mb-4 shadow-sm">
 
-            <div class="card mb-4 shadow-sm">
+                                                <div class="card-header">
+                                                    <h4 class="my-0 font-weight-normal">
+                                                        Dresses
+                                                        <span>
+                                                            <br />
+                                                            <img width="40%" height="200px" src="greendress1.jpg" />
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h1 class="card-title pricing-card-title">N$ 250.00</h1>
+                                                    <button type="button" class="btn btn-block btn-outline-primary"
+                                                            onClick="cartLS.add({id: 11, name: ' Dresses', price: 250})">
+                                                        Add to
+                                                        Cart
+                                                    </button>
+                                                </div>
+                                            </div>
 
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        Nail n HAir Kits
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="IMG-20211111-WA0066.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$100</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 13, name: ' Nail n HAir Kits', price: 100})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        Make-Up Kits 
-                        <span>
-                            <br />
-                            <img width="40%" height="200px" src="IMG-20211111-WA0066.jpg" />
-                        </span>
-                    </h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">N$120</h1>
-                    <button type="button" class="btn btn-block btn-outline-primary"
-                            onClick="cartLS.add({id: 14, name: ' Make-Up Kits', price: 120})">
-                        Add to
-                        Cart
-                    </button>
-                </div>
-            </div>
 
-        </div>
+                                            <div class="card-deck mt-4 mb-4 text-center">
 
+                                                <div class="card mb-4 shadow-sm">
+
+                                                    <div class="card-header">
+                                                        <h4 class="my-0 font-weight-normal">
+                                                            Jacket
+                                                            <span>
+                                                                <br />
+                                                                <img width="40%" height="200px" src="jacket4.jpg" />
+                                                            </span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                        <button type="button" class="btn btn-block btn-outline-primary"
+                                                                onClick="cartLS.add({id: 12, name: ' Jacket', price: 300})">
+                                                            Add to
+                                                            Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="card-deck mt-4 mb-4 text-center">
+
+                                                    <div class="card mb-4 shadow-sm">
+
+                                                        <div class="card-header">
+                                                            <h4 class="my-0 font-weight-normal">
+                                                                Jackets
+                                                                <span>
+                                                                    <br />
+                                                                    <img width="40%" height="200px" src="jacket1.jpg" />
+                                                                </span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                            <button type="button" class="btn btn-block btn-outline-primary"
+                                                                    onClick="cartLS.add({id: 13, name: ' Jacket', price: 300})">
+                                                                Add to
+                                                                Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="card-deck mt-4 mb-4 text-center">
+
+                                                        <div class="card mb-4 shadow-sm">
+
+                                                            <div class="card-header">
+                                                                <h4 class="my-0 font-weight-normal">
+                                                                    Jackets
+                                                                    <span>
+                                                                        <br />
+                                                                        <img width="40%" height="200px" src="jacket2.jpg" />
+                                                                    </span>
+                                                                </h4>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                                <button type="button" class="btn btn-block btn-outline-primary"
+                                                                        onClick="cartLS.add({id: 14, name: ' Jacket', price: 300})">
+                                                                    Add to
+                                                                    Cart
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-deck mt-4 mb-4 text-center">
+
+                                                            <div class="card mb-4 shadow-sm">
+
+                                                                <div class="card-header">
+                                                                    <h4 class="my-0 font-weight-normal">
+                                                                        Jackets
+                                                                        <span>
+                                                                            <br />
+                                                                            <img width="40%" height="200px" src="jacket3.jpg" />
+                                                                        </span>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                                    <button type="button" class="btn btn-block btn-outline-primary"
+                                                                            onClick="cartLS.add({id: 15, name: ' Jacket', price: 300})">
+                                                                        Add to
+                                                                        Cart
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <div class="card-deck mt-4 mb-4 text-center">
+
+                                                                <div class="card mb-4 shadow-sm">
+
+                                                                    <div class="card-header">
+                                                                        <h4 class="my-0 font-weight-normal">
+                                                                            Jacket 2piece
+                                                                            <span>
+                                                                                <br />
+                                                                                <img width="40%" height="200px" src="jacket2piece.jpg" />
+                                                                            </span>
+                                                                        </h4>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                                        <button type="button" class="btn btn-block btn-outline-primary"
+                                                                                onClick="cartLS.add({id: 16, name: ' Jacket 2piece', price: 300})">
+                                                                            Add to
+                                                                            Cart
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <br />
+                                                                <!--
+
+                                                                                                                                    <h2 id="womensclothes">Womens Head-Wear </h2>
+                                                                <hr />
+                                                                <br />
+                                                                <div class="card-deck mt-4 mb-4 text-center">
+
+                                                                    <div class="card mb-4 shadow-sm">
+
+                                                                        <div class="card-header">
+                                                                            <h4 class="my-0 font-weight-normal">
+                                                                                Bundled Hair
+                                                                                <span>
+                                                                                    <br />
+                                                                                    <img width="40%" height="200px" src="IMG-20211111-WA0066.jpg" />
+                                                                                </span>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <div class="card-body">
+                                                                            <h1 class="card-title pricing-card-title">N$100</h1>
+                                                                            <button type="button" class="btn btn-block btn-outline-primary"
+                                                                                    onClick="cartLS.add({id: 3, name: ' Bundled Hair', price: 100})">
+                                                                                Add to
+                                                                                Cart
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card mb-4 shadow-sm">
+                                                                        <div class="card-header">
+                                                                            <h4 class="my-0 font-weight-normal">
+                                                                                Butterfly Locs Hair
+                                                                                <span>
+                                                                                    <br />
+                                                                                    <img width="40%" height="200px" src="IMG-20211111-WA0067.jpg" />
+                                                                                </span>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <div class="card-body">
+                                                                            <h1 class="card-title pricing-card-title">N$120</h1>
+                                                                            <button type="button" class="btn btn-block btn-outline-primary"
+                                                                                    onClick="cartLS.add({id: 4, name: 'Butterfly Locs Hair ', price: 120})">
+                                                                                Add to
+                                                                                Cart
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <br />
+
+                                                                -->
+                                                                <br />
+                                                                <h2 id="womensfootwear">Women's Foot-Wear </h2>
+                                                                <hr />
+                                                                <br />
+                                                                <div class="card-deck mt-4 mb-4 text-center">
+
+                                                                    <div class="card mb-4 shadow-sm">
+
+                                                                        <div class="card-header">
+                                                                            <h4 class="my-0 font-weight-normal">
+                                                                                Sundals
+                                                                                <span>
+                                                                                    <br />
+                                                                                    <img width="40%" height="200px" src="IMG-20211108-WA0006.jpg" />
+                                                                                </span>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <div class="card-body">
+                                                                            <h1 class="card-title pricing-card-title">N$150</h1>
+                                                                            <button type="button" class="btn btn-block btn-outline-primary"
+                                                                                    onClick="cartLS.add({id: 17, name: ' Sundals', price: 150})">
+                                                                                Add to
+                                                                                Cart
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card mb-4 shadow-sm">
+                                                                        <div class="card-header">
+                                                                            <h4 class="my-0 font-weight-normal">
+                                                                                Heels
+                                                                                <span>
+                                                                                    <br />
+                                                                                    <img width="40%" height="200px" src="IMG-20211108-WA0056.jpg" />
+                                                                                </span>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <div class="card-body">
+                                                                            <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                                            <button type="button" class="btn btn-block btn-outline-primary"
+                                                                                    onClick="cartLS.add({id: 18, name: 'Heels ', price: 300})">
+                                                                                Add to
+                                                                                Cart
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="card mb-4 shadow-sm">
+                                                                    <div class="card-header">
+                                                                        <h4 class="my-0 font-weight-normal">
+                                                                            Heels
+                                                                            <span>
+                                                                                <br />
+                                                                                <img width="40%" height="200px" src="heel1.jpg" />
+                                                                            </span>
+                                                                        </h4>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                                        <button type="button" class="btn btn-block btn-outline-primary"
+                                                                                onClick="cartLS.add({id: 19, name: 'Heels ', price: 300})">
+                                                                            Add to
+                                                                            Cart
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="card mb-4 shadow-sm">
+                                                                <div class="card-header">
+                                                                    <h4 class="my-0 font-weight-normal">
+                                                                        Heels
+                                                                        <span>
+                                                                            <br />
+                                                                            <img width="40%" height="200px" src="heel2.jpg" />
+                                                                        </span>
+                                                                    </h4>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                                    <button type="button" class="btn btn-block btn-outline-primary"
+                                                                            onClick="cartLS.add({id: 20, name: 'Heels ', price: 300})">
+                                                                        Add to
+                                                                        Cart
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="card mb-4 shadow-sm">
+                                                            <div class="card-header">
+                                                                <h4 class="my-0 font-weight-normal">
+                                                                    Heels
+                                                                    <span>
+                                                                        <br />
+                                                                        <img width="40%" height="200px" src="heel3.jpg" />
+                                                                    </span>
+                                                                </h4>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                                <button type="button" class="btn btn-block btn-outline-primary"
+                                                                        onClick="cartLS.add({id: 21, name: 'Heels ', price: 300})">
+                                                                    Add to
+                                                                    Cart
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="card mb-4 shadow-sm">
+                                                        <div class="card-header">
+                                                            <h4 class="my-0 font-weight-normal">
+                                                                Heels
+                                                                <span>
+                                                                    <br />
+                                                                    <img width="40%" height="200px" src="heel4.jpg" />
+                                                                </span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                            <button type="button" class="btn btn-block btn-outline-primary"
+                                                                    onClick="cartLS.add({id: 22, name: 'Heels ', price: 300})">
+                                                                Add to
+                                                                Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="card mb-4 shadow-sm">
+                                                    <div class="card-header">
+                                                        <h4 class="my-0 font-weight-normal">
+                                                            Heels
+                                                            <span>
+                                                                <br />
+                                                                <img width="40%" height="200px" src="heel5.jpg" />
+                                                            </span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title pricing-card-title">N$ 300.00</h1>
+                                                        <button type="button" class="btn btn-block btn-outline-primary"
+                                                                onClick="cartLS.add({id: 23, name: 'Heels ', price: 300})">
+                                                            Add to
+                                                            Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <br />
+                                            <h2 id="womensacc">Accessories </h2>
+                                            <hr />
+                                            <br />
+                                            <div class="card-deck mt-4 mb-4 text-center">
+
+                                                <div class="card mb-4 shadow-sm">
+
+                                                    <div class="card-header">
+                                                        <h4 class="my-0 font-weight-normal">
+                                                            Hand Bags
+                                                            <span>
+                                                                <br />
+                                                                <img width="40%" height="200px" src="blackhandbag.jpg" />
+                                                            </span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title pricing-card-title">N$ 200.00</h1>
+                                                        <button type="button" class="btn btn-block btn-outline-primary"
+                                                                onClick="cartLS.add({id: 24, name: ' Hand Bags', price: 200})">
+                                                            Add to
+                                                            Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="card mb-4 shadow-sm">
+                                                    <div class="card-header">
+                                                        <h4 class="my-0 font-weight-normal">
+                                                            Hand Bags
+                                                            <span>
+                                                                <br />
+                                                                <img width="40%" height="200px" src="handbag1.jpg" />
+                                                            </span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title pricing-card-title">N$ 200.00</h1>
+                                                        <button type="button" class="btn btn-block btn-outline-primary"
+                                                                onClick="cartLS.add({id: 25, name: ' Hand Bags', price: 200})">
+                                                            Add to
+                                                            Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="card-deck mt-4 mb-4 text-center">
+
+                                                <div class="card mb-4 shadow-sm">
+
+                                                    <div class="card-header">
+                                                        <h4 class="my-0 font-weight-normal">
+                                                            Hand Bags
+                                                            <span>
+                                                                <br />
+                                                                <img width="40%" height="200px" src="pinklvbag.jpg" />
+                                                            </span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title pricing-card-title">N$ 250.00</h1>
+                                                        <button type="button" class="btn btn-block btn-outline-primary"
+                                                                onClick="cartLS.add({id: 26, name: ' Hand Bags', price: 250})">
+                                                            Add to
+                                                            Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-deck mt-4 mb-4 text-center">
+
+                                                    <div class="card mb-4 shadow-sm">
+
+                                                        <div class="card-header">
+                                                            <h4 class="my-0 font-weight-normal">
+                                                                Hand Bags
+                                                                <span>
+                                                                    <br />
+                                                                    <img width="40%" height="200px" src="pinkhandbag.jpg" />
+                                                                </span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h1 class="card-title pricing-card-title">N$ 250.00</h1>
+                                                            <button type="button" class="btn btn-block btn-outline-primary"
+                                                                    onClick="cartLS.add({id: 27, name: ' Hand Bags', price: 250})">
+                                                                Add to
+                                                                Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="card-header">
+                                                        <h4 class="my-0 font-weight-normal">
+                                                            Hand Bags
+                                                            <span>
+                                                                <br />
+                                                                <img width="40%" height="200px" src="sethandbag.jpg" />
+                                                            </span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title pricing-card-title">N$ 200.00</h1>
+                                                        <button type="button" class="btn btn-block btn-outline-primary"
+                                                                onClick="cartLS.add({id: 28, name: ' Hand Bags', price: 200})">
+                                                            Add to
+                                                            Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-deck mt-4 mb-4 text-center">
+
+                                                    <div class="card mb-4 shadow-sm">
+
+                                                        <div class="card-header">
+                                                            <h4 class="my-0 font-weight-normal">
+                                                                Watches
+                                                                <span>
+                                                                    <br />
+                                                                    <img width="40%" height="200px" src="watch1.jpg" />
+                                                                </span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h1 class="card-title pricing-card-title">N$ 200.00</h1>
+                                                            <button type="button" class="btn btn-block btn-outline-primary"
+                                                                    onClick="cartLS.add({id: 29, name: '  Watches', price: 200})">
+                                                                Add to
+                                                                Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-4 shadow-sm">
+                                                        <div class="card-header">
+                                                            <h4 class="my-0 font-weight-normal">
+                                                                Watches
+                                                                <span>
+                                                                    <br />
+                                                                    <img width="40%" height="200px" src="watch2.jpg" />
+                                                                </span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h1 class="card-title pricing-card-title">N$ 200.00</h1>
+                                                            <button type="button" class="btn btn-block btn-outline-primary"
+                                                                    onClick="cartLS.add({id: 30, name: ' Watches ', price: 200})">
+                                                                Add to
+                                                                Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card mb-4 shadow-sm">
+                                                    <div class="card-header">
+                                                        <h4 class="my-0 font-weight-normal">
+                                                            Watches
+                                                            <span>
+                                                                <br />
+                                                                <img width="40%" height="200px" src="watch3.jpg" />
+                                                            </span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h1 class="card-title pricing-card-title">N$ 150.00</h1>
+                                                        <button type="button" class="btn btn-block btn-outline-primary"
+                                                                onClick="cartLS.add({id: 31, name: ' Watches ', price:150})">
+                                                            Add to
+                                                            Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="card mb-4 shadow-sm">
+                                                <div class="card-header">
+                                                    <h4 class="my-0 font-weight-normal">
+                                                        Watches
+                                                        <span>
+                                                            <br />
+                                                            <img width="40%" height="200px" src="silverwatch.jpg" />
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h1 class="card-title pricing-card-title">N$ 200.00</h1>
+                                                    <button type="button" class="btn btn-block btn-outline-primary"
+                                                            onClick="cartLS.add({id: 32, name: ' Watches ', price: 200})">
+                                                        Add to
+                                                        Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card mb-4 shadow-sm">
+                                            <div class="card-header">
+                                                <h4 class="my-0 font-weight-normal">
+                                                    Watches
+                                                    <span>
+                                                        <br />
+                                                        <img width="40%" height="200px" src="goldwatch.jpg" />
+                                                    </span>
+                                                </h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <h1 class="card-title pricing-card-title">N$ 200.00</h1>
+                                                <button type="button" class="btn btn-block btn-outline-primary"
+                                                        onClick="cartLS.add({id: 33, name: ' Watches ', price: 200})">
+                                                    Add to
+                                                    Cart
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!--
+                                                                              <br />
+                                                                              <h2 id="womensaccessories">Hair </h2>
+                                                                              <hr />
+                                                                              <br />
+                                                                              <div class="card-deck mt-4 mb-4 text-center">
+
+                                                                                  <div class="card mb-4 shadow-sm">
+
+                                                                                      <div class="card-header">
+                                                                                          <h4 class="my-0 font-weight-normal">
+                                                                                              Assorted HAir
+                                                                                              <span>
+                                                                                                  <br />
+                                                                                                  <img width="40%" height="200px" src="IMG-20211111-WA0067.jpg" />
+                                                                                              </span>
+                                                                                          </h4>
+                                                                                      </div>
+                                                                                      <div class="card-body">
+                                                                                          <h1 class="card-title pricing-card-title">N$100</h1>
+                                                                                          <button type="button" class="btn btn-block btn-outline-primary"
+                                                                                                  onClick="cartLS.add({id: 11, name: ' Assorted HAir', price: 100})">
+                                                                                              Add to
+                                                                                              Cart
+                                                                                          </button>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="card mb-4 shadow-sm">
+                                                                                      <div class="card-header">
+                                                                                          <h4 class="my-0 font-weight-normal">
+                                                                                              Bundelled Hair
+                                                                                              <span>
+                                                                                                  <br />
+                                                                                                  <img width="40%" height="200px" src="IMG-20211111-WA0067.jpg" />
+                                                                                              </span>
+                                                                                          </h4>
+                                                                                      </div>
+                                                                                      <div class="card-body">
+                                                                                          <h1 class="card-title pricing-card-title">N$120</h1>
+                                                                                          <button type="button" class="btn btn-block btn-outline-primary"
+                                                                                                  onClick="cartLS.add({id: 12, name: ' Bundelled Hair', price: 120})">
+                                                                                              Add to
+                                                                                              Cart
+                                                                                          </button>
+                                                                                      </div>
+                                                                                  </div>
+
+                                                                              </div>
+
+                                                                              <br />
+                                                                              <h2 id="headwear"> Cosmetics </h2>
+                                                                              <hr />
+                                                                              <br />
+                                                                              <div class="card-deck mt-4 mb-4 text-center">
+
+                                                                                  <div class="card mb-4 shadow-sm">
+
+                                                                                      <div class="card-header">
+                                                                                          <h4 class="my-0 font-weight-normal">
+                                                                                              Nail n HAir Kits
+                                                                                              <span>
+                                                                                                  <br />
+                                                                                                  <img width="40%" height="200px" src="IMG-20211111-WA0066.jpg" />
+                                                                                              </span>
+                                                                                          </h4>
+                                                                                      </div>
+                                                                                      <div class="card-body">
+                                                                                          <h1 class="card-title pricing-card-title">N$100</h1>
+                                                                                          <button type="button" class="btn btn-block btn-outline-primary"
+                                                                                                  onClick="cartLS.add({id: 13, name: ' Nail n HAir Kits', price: 100})">
+                                                                                              Add to
+                                                                                              Cart
+                                                                                          </button>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="card mb-4 shadow-sm">
+                                                                                      <div class="card-header">
+                                                                                          <h4 class="my-0 font-weight-normal">
+                                                                                              Make-Up Kits
+                                                                                              <span>
+                                                                                                  <br />
+                                                                                                  <img width="40%" height="200px" src="IMG-20211111-WA0066.jpg" />
+                                                                                              </span>
+                                                                                          </h4>
+                                                                                      </div>
+                                                                                      <div class="card-body">
+                                                                                          <h1 class="card-title pricing-card-title">N$120</h1>
+                                                                                          <button type="button" class="btn btn-block btn-outline-primary"
+                                                                                                  onClick="cartLS.add({id: 14, name: ' Make-Up Kits', price: 120})">
+                                                                                              Add to
+                                                                                              Cart
+                                                                                          </button>
+                                                                                      </div>
+                                                                                  </div>
+
+                                                                              </div>
+                                    -->
     </center>
 
     <a href="lina-Hub.html">
         <h4 align="center"> Go Back Home  </h4>
     </a>
-
+    <br />
+    <center>
+        <a href="lina-cart.html" target="_blank">
+            <small> CART </small>
+        </a>
+        <br />
+    </center>
 
     <table border="0" width="100%">
         <tr>
